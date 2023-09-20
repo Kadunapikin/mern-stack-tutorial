@@ -1,6 +1,9 @@
 const names = require('./intro4-names')
 const sayHi = require('./intro5-utils')
-console.log(names)
+const data = require('./intro7-alternative-flavor')
+require('./intro8')
+
+console.log(data)
 
 
 sayHi('susan')
