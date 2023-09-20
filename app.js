@@ -1,12 +1,17 @@
-//Global variables
-// --dirname - path to current directory
-// --filename - file name
-// require - function to use modules (commonJs)
-// module - infor about current module (file) executed
-// process - information about env where the program is beign executed
+//Modules in node js
+//common js, every file is a module
+//modules- Ecapsulated code (only share minimum; only what we want to share)
 
-// console.log(--dirname);
+const john = 'john';
+const peter = 'peter';
 
-setInterval(() => {
-    console.log('Hello world');
-}, 1000);
+// const sayHi = (name) => {
+//     console.log(`Hello there ${name}, how are you doing`);
+// }
+function sayHi(name) {
+    console.log(`Hello there ${name}, how are you doing`);
+}
+
+sayHi('susan')
+sayHi(john)
+sayHi(peter)
