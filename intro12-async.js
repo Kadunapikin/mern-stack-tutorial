@@ -1,6 +1,7 @@
 //Async fs needs a call back at the end
 const {readFile, writeFile } = require('fs');
 
+console.log('start')
 readFile('./content/first.txt', 'utf8', (err, result) => {
     if (err) {
         console.log(err)
@@ -18,7 +19,8 @@ readFile('./content/first.txt', 'utf8', (err, result) => {
                 console.log(err)
                 return err
             }
-            console.log(result)
+            console.log('Done with this task')
         })
     })
 })
+console.log('Starting the next one')
