@@ -32,3 +32,13 @@ readFile('./content/first.txt', 'utf8', (err, result) => {
 })
 console.log('Completed task!');
 console.log('Starting the next one')
+
+//third example
+
+setInterval(() => {
+    console.log('Hello World People');
+}, 2000);
+
+console.log(`How's Everyone`);
+
+//you can kill it by pressing ctrl + c
