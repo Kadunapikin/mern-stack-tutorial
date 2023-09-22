@@ -1,10 +1,15 @@
-//Node.js Event Loop
+const http = require('http');
 
-console.log('Hello Felicity');
+const server = http.createServer((req, res) => {
+    if (req.url === '/') {
+        res.end('This is the landing page')
+    }
+    if (req.url === '/about') {
+        res.end('This is the about page')
+    }
+    res.end('This is an errpr page')
+})
 
-setTimeout(() => {
-    console.log('How was your night')
-}, 0);
-
-console.log('Where are you currently');
-console.log('Take care!');
+server.listen(5000, () => {
+    console.log('The server is listening on port : 5000......');
+})
