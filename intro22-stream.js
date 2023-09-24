@@ -6,7 +6,6 @@
 //They both extent the emitter class
 
 //lets try to create a very big file
-// const { error } = require('console');
 // const {writeFileSync} = require('fs');
 // for(let i = 0; i < 100; i++) {
 //     writeFileSync('./content/big-text.txt', `Hello world ${i}\n`, {flag: 'a'})
