@@ -1,4 +1,4 @@
-//Practical example on stream
+//Practical example on stream. converting data into chunked data to trasfer
 // const {writeFileSync} = require('fs');
 // for(let i = 0; i < 1000; i++) {
 //     writeFileSync('./content/second-big-text.txt', `Hello world ${i}\n`, {flag: 'a'})
